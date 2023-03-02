@@ -11,11 +11,55 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Custom CSS -->
+  <!-- Tailwind CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <header>
+    <div class="container">
+      <div class="row flex items-center justify-between py-3">
+        <!-- Col One -->
+        <div>
+          <a href="index.html">
+            <img src="images/logo/logo.png" alt="website-logo" class="w-24">
+          </a>
+        </div>
+
+        <!-- Col Two -->
+        <div>
+          <div class="flex border border-r-0 rounded-md border-accentOne">
+            <img src="images/icon/search.svg" alt="search" class="pl-3 pr-4">
+            <form>
+              <input type="text" placeholder="search" class="py-2 focus:outline-none">
+              <input type="submit" value="Search" class="bg-accentOne text-white rounded-r-md px-3 py-2">
+            </form>
+          </div>
+        </div>
+
+        <!-- Col Three -->
+        <div class="flex space-x-3">
+          <div class="relative flex flex-col items-center cursor-pointer">
+            <img src="images/icon/heart.svg" alt="">
+            <span class="bg-accentOne h-5 w-5 flex items-center justify-center rounded-full absolute -top-2 left-8">8</span>
+            <p>Wish List</p>
+          </div>
+
+          <div class="relative flex flex-col items-center cursor-pointer">
+            <img src="images/icon/shopping-cart.svg" alt="">
+            <span class="bg-accentOne h-5 w-5 flex items-center justify-center rounded-full absolute -top-2 left-4">5</span>
+            <p>Cart</p>
+          </div>
+
+          <div class=" flex flex-col items-center cursor-pointer">
+            <img src="images/icon/user.svg" alt="">
+            <p>Account</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
   
   
 </body>

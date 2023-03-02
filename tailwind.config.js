@@ -17,6 +17,13 @@ module.exports = {
         poppins: ['Poppins', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
       },
+      colors: {
+        'primary': '#222222',
+        'paragraph': '#777777',
+        'separatorColor': '#eeeeee',
+        'accentOne': '#ffba00',
+        'accentTwo': '#ff6c00',
+      },
     },
   },
   plugins: [],
