@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -76,7 +79,7 @@
           </div>
 
           <!-- Dropdown Menu -->
-          <div class="text-primary absolute bg-white w-full shadow-md divide-y divide-dashed divide-separatorColor opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-1000">
+          <div class="text-primary absolute bg-white w-full shadow-md divide-y divide-dashed divide-separatorColor opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-500">
             <a href="#" class="flex items-center space-x-2 px-5 py-3">
               <span>
                 <img src="images/icon/menu.svg" alt="">
@@ -131,7 +134,7 @@
       </div>
     </div>
   </nav>
-  <!-- End Navbar-->
+  <!-- End Navbar -->
 
   <section class="bg-no-repeat bg-center bg-cover py-28" style="background-image: url('images/banner/banner-3.jpg');">
     <div class="container">
@@ -146,7 +149,45 @@
       </div>
     </div>
   </section>
-  <!-- End Banner-->
+  <!-- End Banner -->
+
+  <section class="pt-14">
+    <div class="container">
+      <div class="row max-w-5xl mx-auto grid grid-cols-3 gap-6">
+        <!-- col 1 -->
+        <div class="col flex items-center px-10 py-5 space-x-5 border border-accentOne">
+          <div>
+            <i class="fa-solid fa-truck text-3xl text-accentOne"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm">Free Shipping</h3>
+            <p>Order over $200</p>
+          </div>
+        </div>
+        <!-- col 2 -->
+        <div class="col flex items-center px-10 py-5 space-x-5 border border-accentOne">
+            <div>
+              <i class="fa-solid fa-hand-holding-dollar text-3xl text-accentOne"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm">Money Return</h3>
+              <p>30 days money return</p>
+            </div>
+        </div>
+        <!-- col 3 -->
+        <div class="col flex items-center px-10 py-5 space-x-5 border border-accentOne">
+            <div>
+              <i class="fa-solid fa-headset text-3xl text-accentOne"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm">24/7 Support</h3>
+              <p>Customer support</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Features -->
   
 </body>
 </html>
