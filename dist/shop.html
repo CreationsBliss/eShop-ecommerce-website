@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eShop - Ecommerce Website</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+  <!-- Slick Slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row flex items-center justify-between py-3">
+        <!-- Col One -->
+        <div>
+          <a href="index.html">
+            <img src="images/logo/logo.png" alt="website-logo" class="w-24">
+          </a>
+        </div>
+
+        <!-- Col Two -->
+        <div>
+          <div class="flex border border-r-0 rounded-md border-accentOne">
+            <img src="images/icon/search.svg" alt="search" class="pl-3 pr-4">
+            <form>
+              <input type="text" placeholder="search" class="py-2 focus:outline-none">
+              <input type="submit" value="Search" class="bg-accentOne text-white rounded-r-md px-3 py-2 cursor-pointer">
+            </form>
+          </div>
+        </div>
+
+        <!-- Col Three -->
+        <div class="flex space-x-3">
+          <div class="relative flex flex-col items-center cursor-pointer">
+            <img src="images/icon/heart.svg" alt="">
+            <span class="bg-accentOne h-5 w-5 flex items-center justify-center rounded-full absolute -top-2 left-8">8</span>
+            <p>Wish List</p>
+          </div>
+
+          <div class="relative flex flex-col items-center cursor-pointer">
+            <img src="images/icon/shopping-cart.svg" alt="">
+            <span class="bg-accentOne h-5 w-5 flex items-center justify-center rounded-full absolute -top-2 left-4">5</span>
+            <p>Cart</p>
+          </div>
+
+          <div class=" flex flex-col items-center cursor-pointer">
+            <img src="images/icon/user.svg" alt="">
+            <p>Account</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <nav class="bg-primary text-white">
+    <div class="container">
+      <div class="row flex items-center space-x-5">
+        <!-- Col 1 -->
+        <div class="relative group">
+          <div class="bg-accentOne">
+            <a href="#" class="flex items-center space-x-2 px-5 py-3">
+              <span>
+                <i class="fa-solid fa-bars text-white"></i>
+              </span>
+              <span>All Categories</span>
+            </a>
+          </div>
+
+          <!-- Dropdown Menu -->
+          <div class="text-primary absolute bg-white w-full shadow-md divide-y divide-dashed divide-separatorColor opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-500">
+            <a href="#" class="flex items-center space-x-2 px-5 py-3">
+              <span>
+                <i class="fa-solid fa-bed text-accentOne"></i>
+              </span>
+              <span>Bedroom</span>
+            </a>
+            <a href="#" class="flex items-center space-x-2 px-5 py-3">
+              <span>
+                <i class="fa-solid fa-couch text-accentOne"></i>
+              </span>
+              <span>Sofa</span>
+            </a>
+            <a href="#" class="flex items-center space-x-2 px-5 py-3">
+              <span>
+                <i class="fa-solid fa-computer text-accentOne"></i>
+              </span>
+              <span>Office</span>
+            </a>
+            <a href="#" class="flex items-center space-x-2 px-5 py-3">
+              <span>
+                <i class="fa-solid fa-person-hiking text-accentOne"></i>
+              </span>
+              <span>Outdoor</span>
+            </a>
+            <a href="#" class="flex items-center space-x-2 px-5 py-3">
+              <span>
+                <i class="fa-solid fa-mattress-pillow text-accentOne"></i>
+              </span>
+              <span>Mattress</span>
+            </a>
+            <a href="#" class="flex items-center space-x-2 px-5 py-3">
+              <span>
+                <i class="fa-solid fa-utensils text-accentOne"></i>
+              </span>
+              <span>Dinning</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="flex justify-between flex-grow">
+          <div class="space-x-5">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div>
+            <a href="#">Login/Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <section class="py-10 mt-24 border-t border-separate">
+    <div class="container">
+      <div class="row grid grid-cols-3 gap-x-10">
+        <!-- Col 1 -->
+        <div class="col space-y-3">
+          <div>
+            <img src="images/logo/logo.png" alt="" class="w-24">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero illo minima ullam architecto provident dolorem.</p>
+          <div>
+            <h2 class="text-primary font-bold text-lg pb-3">NEWSLETTER</h2>
+            <div>
+              <form action="" class="flex border border-separate rounded-md ">
+                <input type="text" placeholder="Enter your email" class="w-full py-2 pl-3 focus:outline-none">
+                <input type="submit" value="subscribe" class="bg-accentOne text-white rounded-r-md px-3 py-2 cursor-pointer uppercase">
+              </form>
+            </div>
+          </div>
+        </div>
+       
+        <!-- Col 2 -->
+        <div class="col grid gap-x-10 grid-cols-2">
+          <!-- Inner Col 1 -->
+        <div class="space-y-3">
+          <h2 class="text-primary font-bold text-lg pb-3">MY ACCOUNT</h2>
+          <div class="flex flex-col space-y-3">
+            <a href="#" class="hover:text-accentOne"> Orders </a>
+            <a href="#" class="hover:text-accentOne"> Wishlist </a>
+            <a href="#" class="hover:text-accentOne"> Track Order </a>
+            <a href="#" class="hover:text-accentOne"> Manage Account </a>
+            <a href="#" class="hover:text-accentOne"> Return Order </a>
+          </div>
+        </div>
+
+        <!-- Inner Col 2 -->
+        <div class="space-y-3">
+          <h2 class="text-primary font-bold text-lg pb-3 uppercase">Information</h2>
+          <div class="flex flex-col space-y-3">
+            <a href="#" class="hover:text-accentOne"> About Us </a>
+            <a href="#" class="hover:text-accentOne"> Return Policy </a>
+            <a href="#" class="hover:text-accentOne"> Terms & Condition </a>
+            <a href="#" class="hover:text-accentOne"> Privacy Policy </a>
+            <a href="#" class="hover:text-accentOne"> FAQ </a>
+          </div>
+        </div>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="space-y-3">
+          <h2 class="text-primary font-bold text-lg pb-3 uppercase">contact</h2>
+          <div class="flex flex-col space-y-3">
+            <div class="flex">
+              <span> <i class="fa-solid fa-location-dot pr-3"></i> </span>
+              <p>
+                6795 Unknown City, NM 14300,  United States Of America
+             </p>
+            </div>
+
+            <div class="flex">
+              <span> <i class="fa-solid fa-phone pr-3"></i> </span>
+              <p>
+                +123 456 789, +123 456 789
+             </p>
+            </div>
+
+            <div class="flex">
+              <span> <i class="fa-solid fa-phone pr-3"></i> </span>
+              <p>
+                hello@world.com
+             </p>
+            </div>
+          </div>
+          <div class="flex space-x-3">
+            <a href="#" class="w-5 h-5 p-4 flex items-center justify-center rounded-full bg-accentOne">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-5 h-5 p-4 flex items-center justify-center rounded-full bg-accentOne">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="w-5 h-5 p-4 flex items-center justify-center rounded-full bg-accentOne">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- End Footer Top -->
+
+  <section class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="text-center">Copyright &copy;2023 | All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Footer -->
+  
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- slick slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Custom JS -->
+  <script src="../dist/js/app.js"></script>
+</body>
+</html>
