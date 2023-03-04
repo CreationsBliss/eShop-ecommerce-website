@@ -14,6 +14,10 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
+  <!-- Slick Slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -67,12 +71,12 @@
   <nav class="bg-primary text-white">
     <div class="container">
       <div class="row flex items-center space-x-5">
-        <!-- Col One -->
+        <!-- Col 1 -->
         <div class="relative group">
           <div class="bg-accentOne">
             <a href="#" class="flex items-center space-x-2 px-5 py-3">
               <span>
-                <img src="images/icon/menu.svg" alt="">
+                <i class="fa-solid fa-bars text-white"></i>
               </span>
               <span>All Categories</span>
             </a>
@@ -82,44 +86,44 @@
           <div class="text-primary absolute bg-white w-full shadow-md divide-y divide-dashed divide-separatorColor opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-500">
             <a href="#" class="flex items-center space-x-2 px-5 py-3">
               <span>
-                <img src="images/icon/menu.svg" alt="">
+                <i class="fa-solid fa-bed text-accentOne"></i>
               </span>
               <span>Bedroom</span>
             </a>
             <a href="#" class="flex items-center space-x-2 px-5 py-3">
               <span>
-                <img src="images/icon/menu.svg" alt="">
+                <i class="fa-solid fa-couch text-accentOne"></i>
               </span>
-              <span>Bedroom</span>
+              <span>Sofa</span>
             </a>
             <a href="#" class="flex items-center space-x-2 px-5 py-3">
               <span>
-                <img src="images/icon/menu.svg" alt="">
+                <i class="fa-solid fa-computer text-accentOne"></i>
               </span>
-              <span>Bedroom</span>
+              <span>Office</span>
             </a>
             <a href="#" class="flex items-center space-x-2 px-5 py-3">
               <span>
-                <img src="images/icon/menu.svg" alt="">
+                <i class="fa-solid fa-person-hiking text-accentOne"></i>
               </span>
-              <span>Bedroom</span>
+              <span>Outdoor</span>
             </a>
             <a href="#" class="flex items-center space-x-2 px-5 py-3">
               <span>
-                <img src="images/icon/menu.svg" alt="">
+                <i class="fa-solid fa-mattress-pillow text-accentOne"></i>
               </span>
-              <span>Bedroom</span>
+              <span>Mattress</span>
             </a>
             <a href="#" class="flex items-center space-x-2 px-5 py-3">
               <span>
-                <img src="images/icon/menu.svg" alt="">
+                <i class="fa-solid fa-utensils text-accentOne"></i>
               </span>
-              <span>Bedroom</span>
+              <span>Dinning</span>
             </a>
           </div>
         </div>
 
-        <!-- Col Two -->
+        <!-- Col 2 -->
         <div class="flex justify-between flex-grow">
           <div class="space-x-5">
             <a href="#">Home</a>
@@ -136,7 +140,7 @@
   </nav>
   <!-- End Navbar -->
 
-  <section class="bg-no-repeat bg-center bg-cover py-28" style="background-image: url('images/banner/banner-3.jpg');">
+  <section class="bg-no-repeat bg-center bg-cover py-40" style="background-image: url('images/banner/banner-1.png');">
     <div class="container">
       <div class="row">
         <div class="col space-y-10">
@@ -191,36 +195,81 @@
 
   <section class="pt-24">
     <div class="container">
+      <div class="row grid grid-cols-2 gap-6">
+        <!-- Col 1 -->
+        <div class="col bg-amber-300/20 flex justify-between items-center px-10 group">
+          <!-- Inner Col 1 -->
+          <div class="space-y-5 basis-1/2">
+            <div>
+              <h3 class="font-bold text-lg text-amber-500">30% off</h3>
+              <h2 class="text-primary font-bold text-lg">Free Shipping</h2>
+              <p class="text-paragraph text-lg">Attractive Natural Furniture</p>
+            </div>
+          <div>
+            <a href="#" class="text-white rounded-md px-6 py-2 font-medium bg-gradient-to-r from-accentOne to-accentTwo">Shop Now</a>
+          </div>
+          </div>
+          <!-- Inner Col 2 -->
+          <div class="basis-1/2 group-hover:scale-105 transition duration-500">
+            <img src="images/product/sofa1.png" alt="">
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="col bg-red-300/20 flex justify-between items-center px-10 group">
+          <!-- Inner Col 1 -->
+          <div class="space-y-5 basis-1/2">
+            <div>
+              <h3 class="font-bold text-lg text-amber-500">50% off</h3>
+              <h2 class="text-primary font-bold text-lg">Flash Sale</h2>
+              <p class="text-paragraph text-lg">Attractive Natural Furniture</p>
+            </div>
+          <div>
+            <a href="#" class="text-white rounded-md px-6 py-2 font-medium bg-gradient-to-r from-accentOne to-accentTwo">Shop Now</a>
+          </div>
+          </div>
+          <!-- Inner Col 2 -->
+          <div class="basis-1/2 group-hover:scale-105 transition duration-500">
+            <img src="images/product/sofa2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Offer -->
+
+  <section class="pt-24">
+    <div class="container">
       <h2 class="text-primary font-semibold text-3xl uppercase pb-10">Shop By Category</h2>
       <div class="row grid grid-cols-3 gap-3">
-        <!-- single col -->
-        <div class="col relative overflow-hidden rounded-sm">
-          <img src="images/banner/bedroom.jpg" alt="" class="w-full">
+        <!-- Col 1 -->
+        <div class="col relative overflow-hidden rounded-sm group">
+          <img src="images/banner/bedroom.jpg" alt="" class="w-full group-hover:scale-105 transition duration-500">
           <a href="#" class="absolute inset-0 flex justify-center items-center text-white font-medium text-xl bg-black/30 hover:bg-black/50 transition">Bedroom</a>
         </div>
-        <!-- single col -->
-        <div class="col relative overflow-hidden rounded-sm">
-          <img src="images/banner/bedroom.jpg" alt="" class="w-full">
+        <!-- Col 2 -->
+        <div class="col relative overflow-hidden rounded-sm group">
+          <img src="images/banner/sofa.jpg" alt="" class="w-full group-hover:scale-105 transition duration-500">
           <a href="#" class="absolute inset-0 flex justify-center items-center text-white font-medium text-xl bg-black/30 hover:bg-black/50 transition">Sofa</a>
         </div>
-        <!-- single col -->
-        <div class="col relative overflow-hidden rounded-sm">
-          <img src="images/banner/bedroom.jpg" alt="" class="w-full">
+        <!-- Col 3 -->
+        <div class="col relative overflow-hidden rounded-sm group">
+          <img src="images/banner/office.jpg" alt="" class="w-full group-hover:scale-105 transition duration-500">
           <a href="#" class="absolute inset-0 flex justify-center items-center text-white font-medium text-xl bg-black/30 hover:bg-black/50 transition">Office</a>
         </div>
-        <!-- single col -->
-        <div class="col relative overflow-hidden rounded-sm">
-          <img src="images/banner/bedroom.jpg" alt="" class="w-full">
+        <!-- sCol 4 -->
+        <div class="col relative overflow-hidden rounded-sm group">
+          <img src="images/banner/outdoor.jpg" alt="" class="w-full group-hover:scale-105 transition duration-500">
           <a href="#" class="absolute inset-0 flex justify-center items-center text-white font-medium text-xl bg-black/30 hover:bg-black/50 transition">Outdoor</a>
         </div>
-        <!-- single col -->
-        <div class="col relative overflow-hidden rounded-sm">
-          <img src="images/banner/bedroom.jpg" alt="" class="w-full">
+        <!-- Col 5 -->
+        <div class="col relative overflow-hidden rounded-sm group">
+          <img src="images/banner/mattress.jpg" alt="" class="w-full group-hover:scale-105 transition duration-500">
           <a href="#" class="absolute inset-0 flex justify-center items-center text-white font-medium text-xl bg-black/30 hover:bg-black/50 transition">Mattress</a>
         </div>
-        <!-- single col -->
-        <div class="col relative overflow-hidden rounded-sm">
-          <img src="images/banner/bedroom.jpg" alt="" class="w-full">
+        <!-- Col 6 -->
+        <div class="col relative overflow-hidden rounded-sm group">
+          <img src="images/banner/dinning.jpg" alt="" class="w-full group-hover:scale-105 transition duration-500">
           <a href="#" class="absolute inset-0 flex justify-center items-center text-white font-medium text-xl bg-black/30 hover:bg-black/50 transition">Dining</a>
         </div>
       </div>
@@ -231,7 +280,7 @@
   <section class="pt-24">
     <div class="container">
       <h2 class="text-primary font-semibold text-3xl uppercase pb-10">Top New Arrival</h2>
-      <div class="row grid grid-cols-4 gap-3">
+      <div class="row slider">
         <!-- Col 1 -->
         <div class="col border border-separate group">
           <!-- product image -->
@@ -269,11 +318,11 @@
               </div>
             </div>
             <div class="text-center">
-              <a href="#" class="text-primary border border-accentOne w-full block py-1 font-medium hover:bg-gradient-to-r from-accentOne to-accentTwo transition">Add to Cart</a>
+              <a href="#" class="text-primary border border-accentOne w-full block py-1 font-medium hover:bg-gradient-to-r from-accentOne to-accentTwo hover:text-white transition duration-150">Add to Cart</a>
             </div>
           </div>
         </div>
-        <!-- Col 1 -->
+        <!-- Col 2 -->
         <div class="col border border-separate group">
           <!-- product image -->
           <div class="relative overflow-hidden cursor-pointer">
@@ -310,11 +359,11 @@
               </div>
             </div>
             <div class="text-center">
-              <a href="#" class="text-primary border border-accentOne w-full block py-1 font-medium hover:bg-gradient-to-r from-accentOne to-accentTwo transition">Add to Cart</a>
+              <a href="#" class="text-primary border border-accentOne w-full block py-1 font-medium hover:bg-gradient-to-r from-accentOne to-accentTwo hover:text-white transition duration-150">Add to Cart</a>
             </div>
           </div>
         </div>
-        <!-- Col 1 -->
+        <!-- Col 3 -->
         <div class="col border border-separate group">
           <!-- product image -->
           <div class="relative overflow-hidden cursor-pointer">
@@ -351,11 +400,11 @@
               </div>
             </div>
             <div class="text-center">
-              <a href="#" class="text-primary border border-accentOne w-full block py-1 font-medium hover:bg-gradient-to-r from-accentOne to-accentTwo transition">Add to Cart</a>
+              <a href="#" class="text-primary border border-accentOne w-full block py-1 font-medium hover:bg-gradient-to-r from-accentOne to-accentTwo hover:text-white transition duration-150">Add to Cart</a>
             </div>
           </div>
         </div>
-        <!-- Col 1 -->
+        <!-- Col 4 -->
         <div class="col border border-separate group">
           <!-- product image -->
           <div class="relative overflow-hidden cursor-pointer">
@@ -392,7 +441,171 @@
               </div>
             </div>
             <div class="text-center">
-              <a href="#" class="text-primary border border-accentOne w-full block py-1 font-medium hover:bg-gradient-to-r from-accentOne to-accentTwo transition">Add to Cart</a>
+              <a href="#" class="text-primary border border-accentOne w-full block py-1 font-medium hover:bg-gradient-to-r from-accentOne to-accentTwo hover:text-white transition duration-150">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- Col 5 -->
+        <div class="col border border-separate group">
+          <!-- product image -->
+          <div class="relative overflow-hidden cursor-pointer">
+            <img src="images/product/product-13.jpg" alt="" class="w-full">
+            <div class="absolute inset-0 flex items-center justify-center space-x-1 bg-black/20 opacity-0 group-hover:opacity-100 transition">
+              <a href="#" class="w-8 h-8 rounded-full bg-accentOne p-2 flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full bg-accentOne p-2 flex items-center justify-center">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Product description -->
+          <div>
+            <h3 class="pl-3 pt-3 text-primary font-bold text-lg">Wooden Chair</h3>
+            <!-- Product Price -->
+            <div class="flex items-center space-x-3 pl-3">
+              <h4 class="text-paragraph font-medium text-lg">$45.00</h4>
+              <h4 class="line-through text-paragraph font-normal text-sm">$55.00</h4>
+            </div>
+            <!-- Product Rating-->
+            <div class="flex items-center space-x-3 pl-3 pb-3">
+              <span class="flex">
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+              </span>
+              <div>
+                <p class="text-paragraph">(150)</p>
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="#" class="text-primary border border-accentOne w-full block py-1 font-medium hover:bg-gradient-to-r from-accentOne to-accentTwo hover:text-white transition duration-150">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- Col 6 -->
+        <div class="col border border-separate group">
+          <!-- product image -->
+          <div class="relative overflow-hidden cursor-pointer">
+            <img src="images/product/product-14.jpg" alt="" class="w-full">
+            <div class="absolute inset-0 flex items-center justify-center space-x-1 bg-black/20 opacity-0 group-hover:opacity-100 transition">
+              <a href="#" class="w-8 h-8 rounded-full bg-accentOne p-2 flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full bg-accentOne p-2 flex items-center justify-center">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Product description -->
+          <div>
+            <h3 class="pl-3 pt-3 text-primary font-bold text-lg">Wooden Chair</h3>
+            <!-- Product Price -->
+            <div class="flex items-center space-x-3 pl-3">
+              <h4 class="text-paragraph font-medium text-lg">$45.00</h4>
+              <h4 class="line-through text-paragraph font-normal text-sm">$55.00</h4>
+            </div>
+            <!-- Product Rating-->
+            <div class="flex items-center space-x-3 pl-3 pb-3">
+              <span class="flex">
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+              </span>
+              <div>
+                <p class="text-paragraph">(150)</p>
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="#" class="text-primary border border-accentOne w-full block py-1 font-medium hover:bg-gradient-to-r from-accentOne to-accentTwo hover:text-white transition duration-150">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- Col 7 -->
+        <div class="col border border-separate group">
+          <!-- product image -->
+          <div class="relative overflow-hidden cursor-pointer">
+            <img src="images/product/product-15.jpg" alt="" class="w-full">
+            <div class="absolute inset-0 flex items-center justify-center space-x-1 bg-black/20 opacity-0 group-hover:opacity-100 transition">
+              <a href="#" class="w-8 h-8 rounded-full bg-accentOne p-2 flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full bg-accentOne p-2 flex items-center justify-center">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Product description -->
+          <div>
+            <h3 class="pl-3 pt-3 text-primary font-bold text-lg">Wooden Chair</h3>
+            <!-- Product Price -->
+            <div class="flex items-center space-x-3 pl-3">
+              <h4 class="text-paragraph font-medium text-lg">$45.00</h4>
+              <h4 class="line-through text-paragraph font-normal text-sm">$55.00</h4>
+            </div>
+            <!-- Product Rating-->
+            <div class="flex items-center space-x-3 pl-3 pb-3">
+              <span class="flex">
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+              </span>
+              <div>
+                <p class="text-paragraph">(150)</p>
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="#" class="text-primary border border-accentOne w-full block py-1 font-medium hover:bg-gradient-to-r from-accentOne to-accentTwo hover:text-white transition duration-150">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <!-- Col 8 -->
+        <div class="col border border-separate group">
+          <!-- product image -->
+          <div class="relative overflow-hidden cursor-pointer">
+            <img src="images/product/product-16.jpg" alt="" class="w-full">
+            <div class="absolute inset-0 flex items-center justify-center space-x-1 bg-black/20 opacity-0 group-hover:opacity-100 transition">
+              <a href="#" class="w-8 h-8 rounded-full bg-accentOne p-2 flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full bg-accentOne p-2 flex items-center justify-center">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Product description -->
+          <div>
+            <h3 class="pl-3 pt-3 text-primary font-bold text-lg">Wooden Chair</h3>
+            <!-- Product Price -->
+            <div class="flex items-center space-x-3 pl-3">
+              <h4 class="text-paragraph font-medium text-lg">$45.00</h4>
+              <h4 class="line-through text-paragraph font-normal text-sm">$55.00</h4>
+            </div>
+            <!-- Product Rating-->
+            <div class="flex items-center space-x-3 pl-3 pb-3">
+              <span class="flex">
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+                <i class="fa-solid fa-star text-accentOne"></i>
+              </span>
+              <div>
+                <p class="text-paragraph">(150)</p>
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="#" class="text-primary border border-accentOne w-full block py-1 font-medium hover:bg-gradient-to-r from-accentOne to-accentTwo hover:text-white transition duration-150">Add to Cart</a>
             </div>
           </div>
         </div>
@@ -500,6 +713,15 @@
       </div>
     </div>
   </section>
-  
+  <!-- End Footer -->
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- slick slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Custom JS -->
+  <script src="../dist/js/app.js"></script>
 </body>
 </html>
