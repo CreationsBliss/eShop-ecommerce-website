@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Form radio box style start */
+@layer components {
+  .select-size #xs-size:checked + label {
+    @apply bg-accentOne text-white border-0;
+  }
+  .select-size #s-size:checked + label {
+    @apply bg-accentOne text-white border-0;
+  }
+  .select-size #m-size:checked + label {
+    @apply bg-accentOne text-white border-0;
+  }
+  .select-size #l-size:checked + label {
+    @apply bg-accentOne text-white border-0;
+  }
+  .select-size #xl-size:checked + label {
+    @apply bg-accentOne text-white border-0;
+  }
+  .select-color #yellow-color:checked + label {
+    @apply ring-2 ring-accentOne ring-offset-2;
+  }
+  .select-color #white-color:checked + label {
+    @apply ring-2 ring-accentOne ring-offset-2;
+  }
+  .select-color #black-color:checked + label {
+    @apply ring-2 ring-accentOne ring-offset-2;
+  }
+}
+
 /* Slick slider style start */
 .slick-slide {
   margin: 0 10px; 
@@ -50,3 +79,5 @@ button.slick-arrow.slick-prev {
   display: none;
 }
 /* Slick slider style end */
+
+

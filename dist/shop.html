@@ -164,16 +164,16 @@
 
   <section class="pt-5">
     <div class="container">
-      <div class="row grid grid-cols-4 space-x-5">
+      <div class="row grid grid-cols-4 space-x-5 items-start">
         <!-- Col 1 -->
-        <div class="col-span-1 shadow-md py-5 px-3 space-y-5 divide-y">
+        <div class="col-span-1 shadow-md py-5 px-3 space-y-5 divide-y border border-separate">
           <!-- Category Part -->
           <div class="space-y-3">
             <h2 class="text-primary font-medium text-xl uppercase">Category</h2>
             <div class="flex justify-between items-center">
               <div>
                 <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4" id="bedroom" checked>
+                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4 text-accentOne focus:ring-0" id="bedroom" checked>
                   <label for="bedroom">Bedroom</label>
                 </form>
               </div>
@@ -185,7 +185,7 @@
             <div class="flex justify-between items-center">
               <div>
                 <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4" id="sofa">
+                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4 text-accentOne focus:ring-0" id="sofa">
                   <label for="sofa">Sofa</label>
                 </form>
               </div>
@@ -197,7 +197,7 @@
             <div class="flex justify-between items-center">
               <div>
                 <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4" id="outdoor">
+                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4 text-accentOne focus:ring-0" id="outdoor">
                   <label for="outdoor">Outdoor</label>
                 </form>
               </div>
@@ -209,7 +209,7 @@
             <div class="flex justify-between items-center">
               <div>
                 <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4" id="office">
+                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4 text-accentOne focus:ring-0" id="office">
                   <label for="office">Office</label>
                 </form>
               </div>
@@ -225,7 +225,7 @@
             <div>
               <div>
                 <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4" checked>
+                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4 text-accentOne focus:ring-0" checked>
                   <label for="women">Hatil</label>
                 </form>
               </div>
@@ -234,7 +234,7 @@
             <div>
               <div>
                 <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4">
+                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4 text-accentOne focus:ring-0">
                   <label for="women">Brothers</label>
                 </form>
               </div>
@@ -243,7 +243,7 @@
             <div>
               <div>
                 <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4">
+                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4 text-accentOne focus:ring-0">
                   <label for="women">Navana</label>
                 </form>
               </div>
@@ -252,7 +252,7 @@
             <div>
               <div>
                 <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4">
+                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4 text-accentOne focus:ring-0">
                   <label for="women">Partex</label>
                 </form>
               </div>
@@ -284,97 +284,68 @@
           <!-- Size Part -->
           <div class="space-y-3 pt-3">
             <h2 class="text-primary font-medium text-xl uppercase">Size</h2>
-            <div>
-              <div>
-                <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4" checked>
-                  <label for="women">Hatil</label>
-                </form>
+            <div class="flex gap-2">
+              <div class="select-size">
+                  <input type="radio" name="size" id="xs-size" class="hidden">
+                  <label for="xs-size" class="w-5 h-5 flex items-center justify-center border border-paragraph rounded-sm text-xs cursor-pointer">XS</label>
+              </div>
+
+              <div class="select-size">
+                  <input type="radio" name="size" id="s-size" class="hidden">
+                  <label for="s-size" class="w-5 h-5 flex items-center justify-center border border-paragraph rounded-sm text-xs cursor-pointer">S</label>
+              </div>
+
+              <div class="select-size">
+                  <input type="radio" name="size" id="m-size" class="hidden">
+                  <label for="m-size" class="w-5 h-5 flex items-center justify-center border border-paragraph rounded-sm text-xs cursor-pointer">M</label>
+              </div>
+
+              <div class="select-size">
+                  <input type="radio" name="size" id="l-size" class="hidden">
+                  <label for="l-size" class="w-5 h-5 flex items-center justify-center border border-paragraph rounded-sm text-xs cursor-pointer">L</label>
+              </div>
+
+              <div class="select-size">
+                  <input type="radio" name="size" id="xl-size" class="hidden">
+                  <label for="xl-size" class="w-5 h-5 flex items-center justify-center border border-paragraph rounded-sm text-xs cursor-pointer">XL</label>
               </div>
             </div>
 
-            <div>
-              <div>
-                <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4">
-                  <label for="women">Brothers</label>
-                </form>
-              </div>
-            </div>
-
-            <div>
-              <div>
-                <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4">
-                  <label for="women">Navana</label>
-                </form>
-              </div>
-            </div>
-
-            <div>
-              <div>
-                <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4">
-                  <label for="women">Partex</label>
-                </form>
-              </div>
-            </div>
           </div>
 
           <!-- Color Part -->
           <div class="space-y-3 pt-3">
             <h2 class="text-primary font-medium text-xl uppercase">Color</h2>
-            <div>
-              <div>
-                <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4" checked>
-                  <label for="women">Hatil</label>
-                </form>
+            <div class="flex gap-2">
+              <div class="select-color">
+                  <input type="radio" name="color" id="yellow-color" class="hidden">
+                  <label for="yellow-color" class="w-5 h-5 border border-paragraph rounded-sm bg-accentOne inline-block cursor-pointer"></label>
               </div>
+
+              <div class="select-color">
+                <input type="radio" name="color" id="white-color" class="hidden">
+                <label for="white-color" class="w-5 h-5 border border-paragraph rounded-sm bg-white inline-block cursor-pointer"></label>
             </div>
 
-            <div>
-              <div>
-                <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4">
-                  <label for="women">Brothers</label>
-                </form>
-              </div>
+            <div class="select-color">
+              <input type="radio" name="color" id="black-color" class="hidden">
+              <label for="black-color" class="w-5 h-5 border border-paragraph rounded-sm bg-black inline-block cursor-pointer"></label>
+          </div>
             </div>
 
-            <div>
-              <div>
-                <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4">
-                  <label for="women">Navana</label>
-                </form>
-              </div>
-            </div>
-
-            <div>
-              <div>
-                <form class="space-x-2">
-                  <input type="checkbox" class="border border-paragraph rounded-none h-4 w-4">
-                  <label for="women">Partex</label>
-                </form>
-              </div>
-            </div>
           </div>
         </div>
-
 
         <!-- Col 2 -->
         <div class="col-span-3 space-y-5">
           <!-- Row 1 -->
           <div class="flex justify-between items-center">
             <div>
-              <form>
-                <select class="border border-separatorColor focus:outline-0 focus:ring-0 focus:border-separate">
+                <select class="w-44 border border-separatorColor px-4 py-3 focus:ring-0 focus:border-accentOne">
                   <option value="">Default Sorting</option>
                   <option value="">Price low - high</option>
                   <option value="">Price high - low</option>
                 </select>
-              </form>
             </div>
 
             <div class="flex items-center space-x-3">
