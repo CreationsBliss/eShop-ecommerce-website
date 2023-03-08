@@ -1,5 +1,5 @@
 # eShop
-- A tailwindcss ecommerce template
+A tailwindcss ecommerce template
 
 ### Live Website
 - https://creationsbliss.github.io/eShop-ecommerce-website/dist/
