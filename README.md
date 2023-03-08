@@ -1,12 +1,12 @@
-#eShop
+# eShop
 - A tailwindcss ecommerce template
 
-###Live Website
+### Live Website
 - https://creationsbliss.github.io/eShop-ecommerce-website/dist/
 
-###Technology used: HTML, CSS, Tailwindcss, JavaScript, Jquery
+### Technology used: HTML, CSS, Tailwindcss, JavaScript, Jquery
 
-###Features
+### Features
 - Fully Responsive
 - Mobile Navigations
 - Animated elements on scroll
